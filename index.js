@@ -10,6 +10,7 @@ const server = http.createServer((req, res) => {
     if (path === '/designers') {
         if (method === 'GET') {
             // Obtener todos los diseñadores
+            //prueba
             res.setHeader('Content-Type', 'application/json');
             res.statusCode = 200;
             res.end(JSON.stringify(designers));
