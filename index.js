@@ -49,6 +49,7 @@ const server = http.createServer((req, res) => {
             }
         } else if (method === 'PUT') {
             // Actualizar un diseñador por su ID
+            //.....
             let body = '';
             req.on('data', chunk => {
                 body += chunk;
