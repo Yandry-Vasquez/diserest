@@ -76,6 +76,7 @@ const server = http.createServer((req, res) => {
 
         } else if (method === 'DELETE') {
             // Eliminar un diseñador por su ID
+            // es una prueba
             const designerIndex = designers.findIndex(d => d.id === designerId);
 
             if (designerIndex !== -1) {
