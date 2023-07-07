@@ -84,7 +84,7 @@ const server = http.createServer((req, res) => {
                 res.setHeader('Content-Type', 'application/json');
                 res.statusCode = 200;
                 res.end(JSON.stringify(deletedDesigner));
-
+                
             } else {
                 res.statusCode = 404;
                 res.end();
@@ -96,7 +96,7 @@ const server = http.createServer((req, res) => {
     }
 });
 
-
+//variable del puerto
 const port = 3000;
 server.listen(port, () => {
     console.log(`Servidor escuchando en el puerto ${port}`);
